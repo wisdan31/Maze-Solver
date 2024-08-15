@@ -1,6 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
+        self.f = None
+        self.g = None
+        self.h = None
+
 random_maze = np.random.randint(2, size=(10, 10))
 
 empty_maze = np.zeros((10, 10))
